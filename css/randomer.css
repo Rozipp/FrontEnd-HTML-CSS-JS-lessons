@@ -1,0 +1,66 @@
+#randomer {
+    font-family: verdana, sans;
+    font-size: 9pt;
+    background: #FFFFFF;
+    padding: 5px;
+    margin: 0px;
+    width: 148px;
+    color: #777777;
+
+    border: 1px solid #CCCCFF;
+}
+
+#randomer-title {
+    text-align: center;
+    padding: 1px;
+    display: block;
+    background: #CCCCFF;
+    color: #000000;
+    margin: -6px;
+    margin-bottom: 10px;
+}
+
+#randomer-min-span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#randomer-min-span label {
+    color: #777777;
+}
+
+#randomer-min-span input {
+    width: 77px;
+    margin-left: 10px;
+}
+
+#randomer-max-span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#randomer-max-span label {
+    color: #777777;
+}
+
+#randomer-max-span input {
+    width: 77px;
+    margin-left: 6px;
+}
+
+#randomer-button input {
+    display: block;
+    width: 103px;
+}
+
+#randomer-output {
+    display: block;
+    width: 103px;
+    padding: 2px;
+    margin-bottom: 10px;
+    color: #000000;
+    background: #CCCCFF;
+    font-size: 11pt;
+    font-size: 100%;
+    font-weight: bold;
+}

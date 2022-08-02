@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <!-- Кодування веб-сторінки -->
+    <meta charset="utf-8">
+    <title>Генератор випадкових чисел</title>
+    <link rel="stylesheet" type="text/css" href="css/randomer.css">
+</head>
+
+<body>
+    <div id="randomer">
+        <form>
+            <span id="randomer-title">Генератор випадкових чисел</span>
+            <span id="randomer-min-span">
+                <label for="randomer-min-input">Min:</label>
+                <input id="randomer-min-input" type="number" name="min" value="10">
+            </span>
+            <span id="randomer-max-span">
+                <label for="randomer-max-input">Max:</label>
+                <input id="randomer-max-input" type="number" name="max" value="100">
+            </span>
+            <br>
+            <span>
+                <input id="randomer-button" type="button" name="getRandom" onclick="press_randomer()" value=" Випадкове число">
+            </span>
+            <label for="randomer-output">Результат:</label>
+            <span>
+                <center><span id="randomer-output"><br></span></center>
+            </span>
+        </form>
+    </div>
+    <script type="text/javascript">
+    function press_randomer() {
+        let min = +document.getElementById("randomer-min-input").value;
+        let max = +document.getElementById("randomer-max-input").value;
+        let rand = (Math.floor(Math.random() * (max - min + 1)) + min);
+        document.getElementById("randomer-output").innerHTML = rand;
+    }
+    </script>
+</body>
+
+</html>
